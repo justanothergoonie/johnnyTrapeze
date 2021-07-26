@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-size: 16px;
+	height: 100%;
+}
+// .wrapper {
+// }
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+// }
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 2.5rem;
+	// line-height: 3px;
+	letter-spacing: 0.25rem;
+}
+
+h2 {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 1.5rem;
+	// line-height: 1.563rem;
+	font-style: bold;
+}
+
+h3 {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 1.125rem;
+	// line-height: 1.563rem;
+	font-style: bold;
+}
+
+h4 {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 0.75rem;
+	// line-height: 1rem;
+	letter-spacing: 0.125rem;
+	font-style: bold;
+	text-transform: uppercase;
+}
+
+// h5 {
+// }
+
+// h6 {
+// }
+
+p {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 0.938rem;
+	line-height: 1.563rem;
+}
+// ul,
+// ol,
+// a {
+// }
+
+// ol {
+// 	li {
+// 	}
+// }
+
+// a {
+// }
+// .active {
+// }
+
+// span {
+// }
+
+// header {
+// }
+
+#toggle {
+	position: absolute;
+	visibility: hidden;
+}
+
+#toggle:checked ~ .verticalNav {
+	top: 80px;
+	height: 15.813rem;
+	transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+	@include bp-large {
+		top: 0px;
+		height: auto;
+	}
+}
