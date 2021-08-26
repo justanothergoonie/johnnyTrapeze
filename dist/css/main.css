@@ -447,6 +447,12 @@ p {
 	margin: 0 0 13.47% 6.66%;
 	align-items: center;
 	letter-spacing: 2px;
+	transition: 0.2s ease;
+}
+
+.about .desktop-flex .about__btn:hover {
+	letter-spacing: 8px;
+	transition: 0.2s ease;
 }
 
 @media screen and (min-width: 1024px) {
@@ -546,6 +552,12 @@ p {
 	margin: 0 0 13.47% 6.66%;
 	align-items: center;
 	letter-spacing: 2px;
+	transition: 0.2s ease;
+}
+
+.port .desktop-flex .port__btn:hover {
+	letter-spacing: 8px;
+	transition: 0.2s ease;
 }
 
 @media screen and (min-width: 1024px) {
@@ -644,6 +656,12 @@ p {
 	margin: 0 0 13.47% 6.66%;
 	align-items: center;
 	letter-spacing: 2px;
+	transition: 0.2s ease;
+}
+
+.com .desktop-flex .com__btn:hover {
+	letter-spacing: 8px;
+	transition: 0.2s ease;
 }
 
 @media screen and (min-width: 1024px) {
@@ -740,6 +758,12 @@ p {
 	margin: 0 0 13.47% 6.66%;
 	align-items: center;
 	letter-spacing: 2px;
+	transition: 0.2s ease;
+}
+
+.wed .desktop-flex .wed__btn:hover {
+	letter-spacing: 8px;
+	transition: 0.2s ease;
 }
 
 @media screen and (min-width: 1024px) {
@@ -818,6 +842,12 @@ p {
 	padding-top: 1rem;
 	font-size: 0.75rem;
 	width: 77.6%;
+	transition: 0.2s ease;
+}
+
+.recent-work .lady .recent-work__btn:hover {
+	letter-spacing: 8px;
+	transition: 0.2s ease;
 }
 
 .recent-work .homes {
@@ -862,6 +892,12 @@ p {
 	padding-top: 1rem;
 	font-size: 0.75rem;
 	width: 77.6%;
+	transition: 0.2s ease;
+}
+
+.recent-work .homes .recent-work__btn:hover {
+	letter-spacing: 8px;
+	transition: 0.2s ease;
 }
 
 .recent-work .doughnuts {
@@ -906,6 +942,12 @@ p {
 	padding-top: 1rem;
 	font-size: 0.75rem;
 	width: 77.6%;
+	transition: 0.2s ease;
+}
+
+.recent-work .doughnuts .recent-work__btn:hover {
+	letter-spacing: 8px;
+	transition: 0.2s ease;
 }
 
 .recent-work .cherry {
@@ -950,6 +992,12 @@ p {
 	padding-top: 1rem;
 	font-size: 0.75rem;
 	width: 77.6%;
+	transition: 0.2s ease;
+}
+
+.recent-work .cherry .recent-work__btn:hover {
+	letter-spacing: 8px;
+	transition: 0.2s ease;
 }
 
 .laymens {
