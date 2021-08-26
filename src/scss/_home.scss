@@ -3,6 +3,7 @@
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
+		padding: 1rem 0rem;
 	}
 	.overlay {
 		position: absolute;
@@ -13,32 +14,38 @@
 		background-color: #fff;
 		// background-color: red;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		@include bp-large {
-			position: static;
-			width: 13.943rem;
+			height: unset;
+			position: relative;
+			// position: static;
+			justify-content: unset;
+			width: unset;
 			background-color: transparent;
-			margin-left: 7.5rem;
+			margin-left: unset;
 		}
 		.logo {
 			display: flex;
-			width: 44%;
+			// width: 44%;
 			align-items: center;
 			justify-content: space-between;
+			margin-left: 2rem;
 			@include bp-large {
-				width: 100%;
+				width: unset;
+				margin-left: 7.563rem;
 			}
 			.img {
 				width: 17.57%;
 				@include bp-large {
 					width: auto;
+					margin-right: 1.5rem;
 				}
 				img {
 					width: 100%;
 				}
 			}
 			h2 {
-				font-size: 1.063rem;
+				font-size: 1.3rem;
 				@include bp-large {
 					font-size: 1.5rem;
 				}
@@ -54,6 +61,7 @@
 			height: 16px;
 			border-top: 2px solid #000;
 			border-bottom: 2px solid #000;
+			margin-right: 2rem;
 			@include bp-large {
 				display: none;
 			}
@@ -142,7 +150,7 @@
 		@include bp-large {
 			display: block;
 			width: 0.75rem;
-			height: 19rem;
+			height: 24rem;
 			position: absolute;
 			left: 0;
 			margin-top: 10.938rem;
@@ -153,20 +161,20 @@
 		// object-fit: contain;
 		width: 100%;
 		height: 25.688rem;
-		background-position: center;
+		background-position: center 20%;
 		background-size: cover;
-		background-image: url(/dist/img/cameraShot.png);
+		background-image: url(../img/cameraShot.png);
 		@include bp-large {
-			height: 40.625rem;
-			width: 51.875rem;
-			// width: 57.63%;
+			height: unset;
+			// width: 51.875rem;
+			width: 57.63%;
 		}
 	}
 	.desktop-flex {
 		@include bp-large {
 			display: flex;
 			flex-direction: column;
-			width: 38.125rem;
+			width: 43.37%;
 		}
 		.about__text {
 			margin: 10.73% 6.66% 0 6.66%;
@@ -186,7 +194,7 @@
 		}
 		.about__btn {
 			font-family: 'DM Sans', sans-serif;
-			width: 39.07%;
+			// width: 39.07%;
 			// height: 2.78%;
 			text-decoration: none;
 			color: $pure-white;
@@ -196,21 +204,21 @@
 			letter-spacing: 2px;
 			@include bp-large {
 				margin-left: 5.375rem;
-				width: 21.78%;
+				// width: 21.78%;
 			}
 			span {
-				width: 51.86%;
+				// width: 51.86%;
 				margin-right: 10.91%;
 				font-size: 0.75rem;
 				@include bp-large {
 					margin-right: 0.875rem;
-					width: 57.2%;
+					// width: 57.2%;
 				}
 			}
 			.btn__arrow {
-				width: 31.15%;
+				// width: 31.15%;
 				@include bp-large {
-					width: 32%;
+					// width: 32%;
 				}
 				svg {
 					width: 100%;
@@ -240,18 +248,18 @@
 		height: 25.688rem;
 		background-position: center;
 		background-size: cover;
-		background-image: url(/dist/img/artsyPhoto.png);
+		background-image: url(../img/artsyPhoto.png);
 		@include bp-large {
-			height: 40.625rem;
+			height: unset;
 			width: 51.875rem;
-			// width: 57.63%;
+			width: 57.63%;
 		}
 	}
 	.desktop-flex {
 		@include bp-large {
 			display: flex;
 			flex-direction: column;
-			width: 38.125rem;
+			width: 43.37%;
 		}
 		.port__text {
 			margin: 10.73% 6.66% 0 6.66%;
@@ -270,7 +278,7 @@
 		}
 		.port__btn {
 			font-family: 'DM Sans', sans-serif;
-			width: 53.98%;
+			// width: 53.98%;
 			// height: 2.78%;
 			text-decoration: none;
 			color: black;
@@ -280,10 +288,10 @@
 			letter-spacing: 2px;
 			@include bp-large {
 				margin-left: 7.375rem;
-				width: 33.18%;
+				// width: 33.18%;
 			}
 			span {
-				width: 74.09%;
+				// width: 74.09%;
 				margin-right: 5.95%;
 				font-size: 0.75rem;
 				@include bp-large {
@@ -291,9 +299,9 @@
 				}
 			}
 			.btn__arrow {
-				width: 20.96%;
+				// width: 20.96%;
 				@include bp-large {
-					width: 23%;
+					// width: 23%;
 				}
 				svg {
 					width: 100%;
@@ -323,18 +331,18 @@
 		height: 25.688rem;
 		background-position: center;
 		background-size: cover;
-		background-image: url(/dist/img/icecreamShot.png);
+		background-image: url(../img/icecreamShot.png);
 		@include bp-large {
-			height: 40.625rem;
-			width: 51.875rem;
-			// width: 57.63%;
+			height: unset;
+			// width: 51.875rem;
+			width: 57.63%;
 		}
 	}
 	.desktop-flex {
 		@include bp-large {
 			display: flex;
 			flex-direction: column;
-			width: 38.125rem;
+			width: 43.37%;
 		}
 		.com__text {
 			margin: 10.73% 6.66% 0 6.66%;
@@ -353,7 +361,7 @@
 		}
 		.com__btn {
 			font-family: 'DM Sans', sans-serif;
-			width: 53.98%;
+			// width: 53.98%;
 			// height: 2.78%;
 			text-decoration: none;
 			color: black;
@@ -363,17 +371,17 @@
 			letter-spacing: 2px;
 			@include bp-large {
 				margin-left: 5.375rem;
-				width: 32.85%;
+				// width: 32.85%;
 			}
 			span {
-				width: 74.09%;
+				// width: 74.09%;
 				margin-right: 5.95%;
 				font-size: 0.75rem;
 			}
 			.btn__arrow {
-				width: 20.96%;
+				// width: 20.96%;
 				@include bp-large {
-					width: 22.96%;
+					// width: 22.96%;
 				}
 				svg {
 					width: 100%;
@@ -403,18 +411,19 @@
 		height: 25.688rem;
 		background-position: center;
 		background-size: cover;
-		background-image: url(/dist/img/coupleShot.png);
+		background-image: url(../img/coupleShot.png);
 		@include bp-large {
-			height: 40.625rem;
-			width: 51.875rem;
-			// width: 57.63%;
+			height: unset;
+			// width: 51.875rem;
+			width: 57.63%;
 		}
 	}
 	.desktop-flex {
 		@include bp-large {
 			display: flex;
 			flex-direction: column;
-			width: 38.125rem;
+			// width: 38.125rem;
+			width: 43.37%;
 		}
 		.wed__text {
 			margin: 10.73% 6.66% 0 6.66%;
@@ -434,7 +443,7 @@
 		}
 		.wed__btn {
 			font-family: 'DM Sans', sans-serif;
-			width: 53.98%;
+			// width: 53.98%;
 			// height: 2.78%;
 			text-decoration: none;
 			color: black;
@@ -444,20 +453,20 @@
 			letter-spacing: 2px;
 			@include bp-large {
 				margin-left: 8.375rem;
-				width: 26.3%;
+				// width: 26.3%;
 			}
 			span {
-				width: 74.09%;
+				// width: 74.09%;
 				margin-right: 5.95%;
 				font-size: 0.75rem;
 				@include bp-large {
-					width: 63.57%;
+					// width: 63.57%;
 				}
 			}
 			.btn__arrow {
-				width: 20.96%;
+				// width: 20.96%;
 				@include bp-large {
-					width: 26.44%;
+					// width: 26.44%;
 				}
 				svg {
 					width: 100%;
@@ -481,13 +490,13 @@
 	}
 	.lady {
 		height: 31.25rem;
-		background-image: url(/dist/img/lady-on-left.png);
+		background-image: url(../img/lady-on-left.png);
 		background-image: linear-gradient(
 				180deg,
 				rgba(0, 0, 0, 0) 0%,
 				rgba(0, 0, 0, 0.5034324942791761) 100%
 			),
-			url(/dist/img/lady-on-left.png);
+			url(../img/lady-on-left.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-left: 2.625rem;
@@ -504,7 +513,7 @@
 			padding-bottom: 1rem;
 		}
 		.line {
-			width: 16.813rem;
+			width: percentage(291/375);
 			height: 0.06rem;
 			background-color: $light-grey;
 		}
@@ -518,30 +527,19 @@
 			font-weight: 500;
 			padding-top: 1rem;
 			font-size: 0.75rem;
-			width: 16.813rem;
-			.btn__arrow {
-				width: 15.96%;
-				svg {
-					width: 100%;
-					height: 0.75rem;
-					.cls-1 {
-						fill: none;
-						stroke: $pure-white;
-						stroke-miterlimit: 10;
-					}
-				}
-			}
+			width: percentage(291/375);
+
 		}
 	}
 	.homes {
 		height: 31.25rem;
-		background-image: url(/dist/img/homes.png);
+		background-image: url(../img/homes.png);
 		background-image: linear-gradient(
 				180deg,
 				rgba(0, 0, 0, 0) 0%,
 				rgba(0, 0, 0, 0.5034324942791761) 100%
 			),
-			url(/dist/img/homes.png);
+			url(../img/homes.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-left: 2.625rem;
@@ -557,7 +555,7 @@
 			padding-bottom: 1rem;
 		}
 		.line {
-			width: 16.813rem;
+			width: percentage(291/375);
 			height: 0.06rem;
 			background-color: $light-grey;
 		}
@@ -571,30 +569,19 @@
 			font-weight: 500;
 			padding-top: 1rem;
 			font-size: 0.75rem;
-			width: 16.813rem;
-			.btn__arrow {
-				width: 15.96%;
-				svg {
-					width: 100%;
-					height: 0.75rem;
-					.cls-1 {
-						fill: none;
-						stroke: $pure-white;
-						stroke-miterlimit: 10;
-					}
-				}
-			}
+			width: percentage(291/375);
+	
 		}
 	}
 	.doughnuts {
 		height: 31.25rem;
-		background-image: url(/dist/img/doughnuts.png);
+		background-image: url(../img/doughnuts.png);
 		background-image: linear-gradient(
 				180deg,
 				rgba(0, 0, 0, 0) 0%,
 				rgba(0, 0, 0, 0.5034324942791761) 100%
 			),
-			url(/dist/img/doughnuts.png);
+			url(../img/doughnuts.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-left: 2.625rem;
@@ -610,7 +597,7 @@
 			padding-bottom: 1rem;
 		}
 		.line {
-			width: 16.813rem;
+			width: percentage(291/375);
 			height: 0.06rem;
 			background-color: $light-grey;
 		}
@@ -624,30 +611,19 @@
 			font-weight: 500;
 			padding-top: 1rem;
 			font-size: 0.75rem;
-			width: 16.813rem;
-			.btn__arrow {
-				width: 15.96%;
-				svg {
-					width: 100%;
-					height: 0.75rem;
-					.cls-1 {
-						fill: none;
-						stroke: $pure-white;
-						stroke-miterlimit: 10;
-					}
-				}
-			}
+			width: percentage(291/375);
+	
 		}
 	}
 	.cherry {
 		height: 31.25rem;
-		background-image: url(/dist/img/cherry.png);
+		background-image: url(../img/cherry.png);
 		background-image: linear-gradient(
 				180deg,
 				rgba(0, 0, 0, 0) 0%,
 				rgba(0, 0, 0, 0.5034324942791761) 100%
 			),
-			url(/dist/img/cherry.png);
+			url(../img/cherry.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-left: 2.625rem;
@@ -663,7 +639,7 @@
 			padding-bottom: 1rem;
 		}
 		.line {
-			width: 16.813rem;
+			width: percentage(291/375);
 			height: 0.06rem;
 			background-color: $light-grey;
 		}
@@ -677,19 +653,8 @@
 			font-weight: 500;
 			padding-top: 1rem;
 			font-size: 0.75rem;
-			width: 16.813rem;
-			.btn__arrow {
-				width: 15.96%;
-				svg {
-					width: 100%;
-					height: 0.75rem;
-					.cls-1 {
-						fill: none;
-						stroke: $pure-white;
-						stroke-miterlimit: 10;
-					}
-				}
-			}
+			width: percentage(291/375);
+
 		}
 	}
 }
@@ -773,18 +738,23 @@ footer {
 	.footer-flex {
 		display: flex;
 		flex-direction: column;
+
 		@include bp-large {
 			flex-direction: row;
 			width: 100%;
 			justify-content: space-between;
+			padding: 3.938rem 5.313rem;
+		}
+		@include bp-ld{
 			padding: 3.938rem 10.313rem;
 		}
 		.flex__left {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
 			@include bp-large {
-				width: 50%;
+				width: 60%;
 
 				flex-direction: row;
 				align-items: center;
@@ -797,7 +767,7 @@ footer {
 				@include bp-large {
 					display: flex;
 					flex-direction: column;
-					width: 41.13%;
+					// width: 41.13%;
 					justify-content: space-between;
 				}
 
@@ -875,9 +845,10 @@ footer {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
 			@include bp-large {
 				align-items: flex-end;
-				width: 23.09%;
+				// width: 23.09%;
 				justify-content: space-around;
 			}
 			a {
@@ -891,7 +862,7 @@ footer {
 				margin-bottom: 3.938rem;
 				@include bp-large {
 					letter-spacing: unset;
-					width: 72.15%;
+					// width: 72.15%;
 					margin-bottom: unset;
 				}
 			}
@@ -900,6 +871,10 @@ footer {
 				font-family: 'DM Sans', sans-serif;
 				color: $light-grey;
 				margin-bottom: 3.938rem;
+				@include bp-large{
+					margin-bottom: unset;
+				}
+				
 			}
 		}
 	}

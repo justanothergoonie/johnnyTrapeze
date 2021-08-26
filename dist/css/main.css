@@ -199,6 +199,7 @@ p {
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
+		padding: 1rem 0rem;
 	}
 }
 
@@ -210,28 +211,31 @@ p {
 	height: 80px;
 	background-color: #fff;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 @media screen and (min-width: 1024px) {
 	.desktop-head .overlay {
-		position: static;
-		width: 13.943rem;
+		height: unset;
+		position: relative;
+		justify-content: unset;
+		width: unset;
 		background-color: transparent;
-		margin-left: 7.5rem;
+		margin-left: unset;
 	}
 }
 
 .desktop-head .overlay .logo {
 	display: flex;
-	width: 44%;
 	align-items: center;
 	justify-content: space-between;
+	margin-left: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
 	.desktop-head .overlay .logo {
-		width: 100%;
+		width: unset;
+		margin-left: 7.563rem;
 	}
 }
 
@@ -242,6 +246,7 @@ p {
 @media screen and (min-width: 1024px) {
 	.desktop-head .overlay .logo .img {
 		width: auto;
+		margin-right: 1.5rem;
 	}
 }
 
@@ -250,7 +255,7 @@ p {
 }
 
 .desktop-head .overlay .logo h2 {
-	font-size: 1.063rem;
+	font-size: 1.3rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -267,6 +272,7 @@ p {
 	height: 16px;
 	border-top: 2px solid #000;
 	border-bottom: 2px solid #000;
+	margin-right: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -380,7 +386,7 @@ p {
 	.about .about__green-bar {
 		display: block;
 		width: 0.75rem;
-		height: 19rem;
+		height: 24rem;
 		position: absolute;
 		left: 0;
 		margin-top: 10.938rem;
@@ -392,15 +398,15 @@ p {
 .about .about__img {
 	width: 100%;
 	height: 25.688rem;
-	background-position: center;
+	background-position: center 20%;
 	background-size: cover;
-	background-image: url(/dist/img/cameraShot.png);
+	background-image: url(../img/cameraShot.png);
 }
 
 @media screen and (min-width: 1024px) {
 	.about .about__img {
-		height: 40.625rem;
-		width: 51.875rem;
+		height: unset;
+		width: 57.63%;
 	}
 }
 
@@ -408,7 +414,7 @@ p {
 	.about .desktop-flex {
 		display: flex;
 		flex-direction: column;
-		width: 38.125rem;
+		width: 43.37%;
 	}
 }
 
@@ -435,7 +441,6 @@ p {
 
 .about .desktop-flex .about__btn {
 	font-family: 'DM Sans', sans-serif;
-	width: 39.07%;
 	text-decoration: none;
 	color: #ffffff;
 	display: flex;
@@ -447,12 +452,10 @@ p {
 @media screen and (min-width: 1024px) {
 	.about .desktop-flex .about__btn {
 		margin-left: 5.375rem;
-		width: 21.78%;
 	}
 }
 
 .about .desktop-flex .about__btn span {
-	width: 51.86%;
 	margin-right: 10.91%;
 	font-size: 0.75rem;
 }
@@ -460,17 +463,6 @@ p {
 @media screen and (min-width: 1024px) {
 	.about .desktop-flex .about__btn span {
 		margin-right: 0.875rem;
-		width: 57.2%;
-	}
-}
-
-.about .desktop-flex .about__btn .btn__arrow {
-	width: 31.15%;
-}
-
-@media screen and (min-width: 1024px) {
-	.about .desktop-flex .about__btn .btn__arrow {
-		width: 32%;
 	}
 }
 
@@ -506,13 +498,14 @@ p {
 	height: 25.688rem;
 	background-position: center;
 	background-size: cover;
-	background-image: url(/dist/img/artsyPhoto.png);
+	background-image: url(../img/artsyPhoto.png);
 }
 
 @media screen and (min-width: 1024px) {
 	.port .port__img {
-		height: 40.625rem;
+		height: unset;
 		width: 51.875rem;
+		width: 57.63%;
 	}
 }
 
@@ -520,7 +513,7 @@ p {
 	.port .desktop-flex {
 		display: flex;
 		flex-direction: column;
-		width: 38.125rem;
+		width: 43.37%;
 	}
 }
 
@@ -547,7 +540,6 @@ p {
 
 .port .desktop-flex .port__btn {
 	font-family: 'DM Sans', sans-serif;
-	width: 53.98%;
 	text-decoration: none;
 	color: black;
 	display: flex;
@@ -559,12 +551,10 @@ p {
 @media screen and (min-width: 1024px) {
 	.port .desktop-flex .port__btn {
 		margin-left: 7.375rem;
-		width: 33.18%;
 	}
 }
 
 .port .desktop-flex .port__btn span {
-	width: 74.09%;
 	margin-right: 5.95%;
 	font-size: 0.75rem;
 }
@@ -572,16 +562,6 @@ p {
 @media screen and (min-width: 1024px) {
 	.port .desktop-flex .port__btn span {
 		margin-right: 0.875rem;
-	}
-}
-
-.port .desktop-flex .port__btn .btn__arrow {
-	width: 20.96%;
-}
-
-@media screen and (min-width: 1024px) {
-	.port .desktop-flex .port__btn .btn__arrow {
-		width: 23%;
 	}
 }
 
@@ -617,13 +597,13 @@ p {
 	height: 25.688rem;
 	background-position: center;
 	background-size: cover;
-	background-image: url(/dist/img/icecreamShot.png);
+	background-image: url(../img/icecreamShot.png);
 }
 
 @media screen and (min-width: 1024px) {
 	.com .com__img {
-		height: 40.625rem;
-		width: 51.875rem;
+		height: unset;
+		width: 57.63%;
 	}
 }
 
@@ -631,7 +611,7 @@ p {
 	.com .desktop-flex {
 		display: flex;
 		flex-direction: column;
-		width: 38.125rem;
+		width: 43.37%;
 	}
 }
 
@@ -658,7 +638,6 @@ p {
 
 .com .desktop-flex .com__btn {
 	font-family: 'DM Sans', sans-serif;
-	width: 53.98%;
 	text-decoration: none;
 	color: black;
 	display: flex;
@@ -670,24 +649,12 @@ p {
 @media screen and (min-width: 1024px) {
 	.com .desktop-flex .com__btn {
 		margin-left: 5.375rem;
-		width: 32.85%;
 	}
 }
 
 .com .desktop-flex .com__btn span {
-	width: 74.09%;
 	margin-right: 5.95%;
 	font-size: 0.75rem;
-}
-
-.com .desktop-flex .com__btn .btn__arrow {
-	width: 20.96%;
-}
-
-@media screen and (min-width: 1024px) {
-	.com .desktop-flex .com__btn .btn__arrow {
-		width: 22.96%;
-	}
 }
 
 .com .desktop-flex .com__btn .btn__arrow svg {
@@ -722,13 +689,13 @@ p {
 	height: 25.688rem;
 	background-position: center;
 	background-size: cover;
-	background-image: url(/dist/img/coupleShot.png);
+	background-image: url(../img/coupleShot.png);
 }
 
 @media screen and (min-width: 1024px) {
 	.wed .wed__img {
-		height: 40.625rem;
-		width: 51.875rem;
+		height: unset;
+		width: 57.63%;
 	}
 }
 
@@ -736,7 +703,7 @@ p {
 	.wed .desktop-flex {
 		display: flex;
 		flex-direction: column;
-		width: 38.125rem;
+		width: 43.37%;
 	}
 }
 
@@ -767,7 +734,6 @@ p {
 
 .wed .desktop-flex .wed__btn {
 	font-family: 'DM Sans', sans-serif;
-	width: 53.98%;
 	text-decoration: none;
 	color: black;
 	display: flex;
@@ -779,30 +745,12 @@ p {
 @media screen and (min-width: 1024px) {
 	.wed .desktop-flex .wed__btn {
 		margin-left: 8.375rem;
-		width: 26.3%;
 	}
 }
 
 .wed .desktop-flex .wed__btn span {
-	width: 74.09%;
 	margin-right: 5.95%;
 	font-size: 0.75rem;
-}
-
-@media screen and (min-width: 1024px) {
-	.wed .desktop-flex .wed__btn span {
-		width: 63.57%;
-	}
-}
-
-.wed .desktop-flex .wed__btn .btn__arrow {
-	width: 20.96%;
-}
-
-@media screen and (min-width: 1024px) {
-	.wed .desktop-flex .wed__btn .btn__arrow {
-		width: 26.44%;
-	}
 }
 
 .wed .desktop-flex .wed__btn .btn__arrow svg {
@@ -830,8 +778,8 @@ p {
 
 .recent-work .lady {
 	height: 31.25rem;
-	background-image: url(/dist/img/lady-on-left.png);
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.503432) 100%), url(/dist/img/lady-on-left.png);
+	background-image: url(../img/lady-on-left.png);
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.503432) 100%), url(../img/lady-on-left.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-left: 2.625rem;
@@ -854,7 +802,7 @@ p {
 }
 
 .recent-work .lady .line {
-	width: 16.813rem;
+	width: 77.6%;
 	height: 0.06rem;
 	background-color: #dfdfdf;
 }
@@ -869,28 +817,13 @@ p {
 	font-weight: 500;
 	padding-top: 1rem;
 	font-size: 0.75rem;
-	width: 16.813rem;
-}
-
-.recent-work .lady .recent-work__btn .btn__arrow {
-	width: 15.96%;
-}
-
-.recent-work .lady .recent-work__btn .btn__arrow svg {
-	width: 100%;
-	height: 0.75rem;
-}
-
-.recent-work .lady .recent-work__btn .btn__arrow svg .cls-1 {
-	fill: none;
-	stroke: #ffffff;
-	stroke-miterlimit: 10;
+	width: 77.6%;
 }
 
 .recent-work .homes {
 	height: 31.25rem;
-	background-image: url(/dist/img/homes.png);
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.503432) 100%), url(/dist/img/homes.png);
+	background-image: url(../img/homes.png);
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.503432) 100%), url(../img/homes.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-left: 2.625rem;
@@ -913,7 +846,7 @@ p {
 }
 
 .recent-work .homes .line {
-	width: 16.813rem;
+	width: 77.6%;
 	height: 0.06rem;
 	background-color: #dfdfdf;
 }
@@ -928,28 +861,13 @@ p {
 	font-weight: 500;
 	padding-top: 1rem;
 	font-size: 0.75rem;
-	width: 16.813rem;
-}
-
-.recent-work .homes .recent-work__btn .btn__arrow {
-	width: 15.96%;
-}
-
-.recent-work .homes .recent-work__btn .btn__arrow svg {
-	width: 100%;
-	height: 0.75rem;
-}
-
-.recent-work .homes .recent-work__btn .btn__arrow svg .cls-1 {
-	fill: none;
-	stroke: #ffffff;
-	stroke-miterlimit: 10;
+	width: 77.6%;
 }
 
 .recent-work .doughnuts {
 	height: 31.25rem;
-	background-image: url(/dist/img/doughnuts.png);
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.503432) 100%), url(/dist/img/doughnuts.png);
+	background-image: url(../img/doughnuts.png);
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.503432) 100%), url(../img/doughnuts.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-left: 2.625rem;
@@ -972,7 +890,7 @@ p {
 }
 
 .recent-work .doughnuts .line {
-	width: 16.813rem;
+	width: 77.6%;
 	height: 0.06rem;
 	background-color: #dfdfdf;
 }
@@ -987,28 +905,13 @@ p {
 	font-weight: 500;
 	padding-top: 1rem;
 	font-size: 0.75rem;
-	width: 16.813rem;
-}
-
-.recent-work .doughnuts .recent-work__btn .btn__arrow {
-	width: 15.96%;
-}
-
-.recent-work .doughnuts .recent-work__btn .btn__arrow svg {
-	width: 100%;
-	height: 0.75rem;
-}
-
-.recent-work .doughnuts .recent-work__btn .btn__arrow svg .cls-1 {
-	fill: none;
-	stroke: #ffffff;
-	stroke-miterlimit: 10;
+	width: 77.6%;
 }
 
 .recent-work .cherry {
 	height: 31.25rem;
-	background-image: url(/dist/img/cherry.png);
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.503432) 100%), url(/dist/img/cherry.png);
+	background-image: url(../img/cherry.png);
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.503432) 100%), url(../img/cherry.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-left: 2.625rem;
@@ -1031,7 +934,7 @@ p {
 }
 
 .recent-work .cherry .line {
-	width: 16.813rem;
+	width: 77.6%;
 	height: 0.06rem;
 	background-color: #dfdfdf;
 }
@@ -1046,22 +949,7 @@ p {
 	font-weight: 500;
 	padding-top: 1rem;
 	font-size: 0.75rem;
-	width: 16.813rem;
-}
-
-.recent-work .cherry .recent-work__btn .btn__arrow {
-	width: 15.96%;
-}
-
-.recent-work .cherry .recent-work__btn .btn__arrow svg {
-	width: 100%;
-	height: 0.75rem;
-}
-
-.recent-work .cherry .recent-work__btn .btn__arrow svg .cls-1 {
-	fill: none;
-	stroke: #ffffff;
-	stroke-miterlimit: 10;
+	width: 77.6%;
 }
 
 .laymens {
@@ -1176,6 +1064,12 @@ footer .footer-flex {
 		flex-direction: row;
 		width: 100%;
 		justify-content: space-between;
+		padding: 3.938rem 5.313rem;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	footer .footer-flex {
 		padding: 3.938rem 10.313rem;
 	}
 }
@@ -1188,7 +1082,7 @@ footer .footer-flex .flex__left {
 
 @media screen and (min-width: 1024px) {
 	footer .footer-flex .flex__left {
-		width: 50%;
+		width: 60%;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
@@ -1205,7 +1099,6 @@ footer .footer-flex .flex__left .flex__far__left {
 	footer .footer-flex .flex__left .flex__far__left {
 		display: flex;
 		flex-direction: column;
-		width: 41.13%;
 		justify-content: space-between;
 	}
 }
@@ -1311,7 +1204,6 @@ footer .footer-flex .flex__right {
 @media screen and (min-width: 1024px) {
 	footer .footer-flex .flex__right {
 		align-items: flex-end;
-		width: 23.09%;
 		justify-content: space-around;
 	}
 }
@@ -1330,7 +1222,6 @@ footer .footer-flex .flex__right a {
 @media screen and (min-width: 1024px) {
 	footer .footer-flex .flex__right a {
 		letter-spacing: unset;
-		width: 72.15%;
 		margin-bottom: unset;
 	}
 }
@@ -1340,6 +1231,12 @@ footer .footer-flex .flex__right span {
 	font-family: 'DM Sans', sans-serif;
 	color: #dfdfdf;
 	margin-bottom: 3.938rem;
+}
+
+@media screen and (min-width: 1024px) {
+	footer .footer-flex .flex__right span {
+		margin-bottom: unset;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
