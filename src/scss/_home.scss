@@ -26,16 +26,17 @@
 		}
 		.logo {
 			display: flex;
-			// width: 44%;
+			width: 42%;
 			align-items: center;
-			justify-content: space-between;
+			// justify-content: space-between;
 			margin-left: 2rem;
+			// width: 41%;
 			@include bp-large {
 				width: unset;
-				margin-left: 7.563rem;
+				// margin-left: 7.563rem;
 			}
 			.img {
-				width: 17.57%;
+				// width: 17.57%;
 				@include bp-large {
 					width: auto;
 					margin-right: 1.5rem;
@@ -46,8 +47,10 @@
 			}
 			h2 {
 				font-size: 1.3rem;
+				margin-left: 1rem;
 				@include bp-large {
 					font-size: 1.5rem;
+					margin-left: unset;
 				}
 			}
 		}
@@ -57,11 +60,31 @@
 			position: relative;
 			// top: 30px;
 			// left: 200px;
-			width: 30px;
-			height: 16px;
-			border-top: 2px solid #000;
-			border-bottom: 2px solid #000;
+			// width: 30px;
+			// height: 16px;
+			// border-top: 2px solid #000;
+			// border-bottom: 2px solid #000;
 			margin-right: 2rem;
+			.hamburger--collapse {
+				.hamburger-inner {
+				  top: auto;
+				  bottom: 0;
+				  transition-duration: 0.13s;
+				  transition-delay: 0.13s;
+				  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+			
+				  &::after {
+					top: ($hamburger-layer-spacing * 2 + $hamburger-layer-height * 2) * -1;
+					transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+								opacity 0.1s linear;
+				  }
+			
+				  &::before {
+					transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+								transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+				  }
+				}
+			  }
 			@include bp-large {
 				display: none;
 			}
@@ -71,7 +94,8 @@
 			display: block;
 			position: relative;
 			top: 5px;
-			border-top: 2px solid #000;
+			// border-top: 2px solid #000;
+	
 		}
 	}
 	.verticalNav {
